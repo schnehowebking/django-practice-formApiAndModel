@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Form-api
+    
+{% endblock %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<div class="container">
+    <h1>Form Api</h1>
+    <div class="container-fluid">
+        <form action="" method="POST">
+            {{form | crispy }}
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</div>
+    
+{% endblock %}
+    
+    
